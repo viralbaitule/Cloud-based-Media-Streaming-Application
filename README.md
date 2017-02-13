@@ -4,19 +4,19 @@ The “Multimedia streaming” project offers the clients an independence of acc
 
 
 Server Dependencies
-My SQL
-Install MYSQL DataBase-- Command -- sudo apt-get install mysql-server
+:My SQL
+::Install MYSQL DataBase-- Command -- sudo apt-get install mysql-server
 
 
 Client Dependencies
-GTK 
-Install gtk library -- command -- sudo apt-get install libgtk2.0-dev
-build gtk -- command -- sudo apt-get build-dep gedit
-VLC Player
+:GTK 
+::Install gtk library -- command -- sudo apt-get install libgtk2.0-dev
+::build gtk -- command -- sudo apt-get build-dep gedit
+:VLC Player
 
 
 Server Compile and run
-gcc -o 13_server 13_server.c $(mysql -config --cflags) $(mysql -config --libs) -lpthread
+::gcc -o 13_server 13_server.c $(mysql -config --cflags) $(mysql -config --libs) -lpthread
 
 Client Compile and run
-gcc -o 13_client 13_client.c `pkg-config --libs --cflags gtk+-2.0` -lpthread
+::gcc -o 13_client 13_client.c `pkg-config --libs --cflags gtk+-2.0` -lpthread
